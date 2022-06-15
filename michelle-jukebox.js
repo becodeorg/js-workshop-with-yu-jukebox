@@ -33,10 +33,26 @@ const theGreatestMusicCollection = [
 
 // --- 🌱 Basics ---
 // TODO: select the author of Baiana
-// TODO: log all song titles
-// TODO: use the find function to select the song by Rammstein
-// TODO: do the same to select all songs by Bakermat. Is the find function the right choice here? If not, what would be a better one? (don't use for or foreach)
+console.log(
+    theGreatestMusicCollection.find((song) => song.title === "Baiana").author
+);
 
+// TODO: log all song titles
+for (let i = 0; i < theGreatestMusicCollection.length; i++) {
+    console.log(theGreatestMusicCollection[i].title);
+}
+// TODO: use the find function to select the song by Rammstein
+console.log(
+    theGreatestMusicCollection.find((song) => song.author === "Rammstein").title
+);
+// TODO: do the same to select all songs by Bakermat. Is the find function the right choice here? If not, what would be a better one? (don't use for or foreach)
+let i = 0;
+while (i < theGreatestMusicCollection.length - 1) {
+    i++;
+    if (theGreatestMusicCollection[i].author === "Bakermat") {
+        console.log(theGreatestMusicCollection[i]);
+    }
+}
 // --- 🌱 Intermediate ---
 // TODO: log all pop songs
 // TODO: write a function that always returns the first song (full object is okay)
