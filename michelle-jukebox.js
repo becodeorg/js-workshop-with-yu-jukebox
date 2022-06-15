@@ -55,6 +55,11 @@ while (i < theGreatestMusicCollection.length - 1) {
 }
 // --- 🌱 Intermediate ---
 // TODO: log all pop songs
+theGreatestMusicCollection.forEach((song) => {
+    if (song.genre === "pop") {
+        console.log(song);
+    }
+});
 // TODO: write a function that always returns the first song (full object is okay)
 // TODO: write a function that will return a song at the index of your chosing. You may not use a global var for this index
 // TODO: write a function that will return a random song. Use a separate function for the random selection
